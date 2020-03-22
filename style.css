@@ -15,6 +15,7 @@
 .w3-sidebar a:hover {
   color: aliceblue;
 }
+
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {
   margin-left: 120px;
@@ -25,4 +26,4 @@
   #main {
     margin-left: 0;
   }
-} */
+}
