@@ -183,7 +183,7 @@
       <i class="fa fa-home w3-xxlarge"></i>
       <p>HOME</p>
     </a>
-    <a href="#about" class="w3-bar-item w3-button w3-paddinfddfdfg-large w3-hover-black">
+    <a href="about.html" class="w3-bar-item w3-button w3-paddinfddfdfg-large w3-hover-black">
       <i class="fa fa-user w3-xxlarge"></i>
       <p>ABOUT</p>
     </a>
@@ -205,7 +205,7 @@
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
     <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
       <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="about.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
       <a href="images.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
       <a href="videos.html" class="w3-bar-item w3-button" style="width:25% !important">VIDEOS</a>
       <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
@@ -223,81 +223,42 @@
       <img src="images/home.jpg" alt="boy" class="w3-image" width="992" height="1108">
     </header>
 
-    <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-      <h2 class="w3-text-light-grey">About me</h2>
-      <hr style="width:200px" class="w3-opacity ">
-      <h6 class="w3-padding-24 w3-text-light-grey">
-        Didk is a simple man with simple life and dreams.
-        I Understand more and fear less. My life goes on ... yeah that's true, i'm alive.
+    <!-- contact Section -->
 
-      </h6>
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Contact Me</h2>
+      <hr style="width:200px" class="w3-opacity">
 
-      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-        <h2 class="w3-text-light-grey">Contact Me</h2>
-        <hr style="width:200px" class="w3-opacity">
-
-        <div class="w3-section">
-          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Ottawa, Canada</p>
-          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: + 1 809-6672</p>
-          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ledidk17@gmail.com
-          </p>
-        </div><br>
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Ottawa, Canada</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: + 1 809-6672</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ledidk17@gmail.com
+        </p>
+      </div><br>
 
 
-        <p>Lets get in touch. Send me a message:</p>
+      <p>Lets get in touch. Send me a message:</p>
 
-      </div>
-
-      <!-- Footer -->
-      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-        <a href="https://www.facebook.com/Le.Didk.908" target="_blank"><i
-            class="fa fa-facebook-official w3-jumbo w3-hover-opacity"></i></a>
-        <a href="https://www.instagram.com/le_didk/" target="_blank"><i
-            class="fa fa-instagram w3-jumbo w3-hover-opacity"></i></a>
-        <a href="https://www.youtube.com/channel/UCQUeIZ3OtPaJI8_i9WJBKHw" target="_blank"><i
-            class="fa fa-youtube w3-jumbo w3-hover-opacity"></i></a>
-        <i class="fa fa-twitter w3-jumbo w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-jumbo w3-hover-opacity"></i>
-        <p class="w3-medium">Designed by <a href="http://mr-zack.com/" target="_blank" class="w3-hover-text-green">Mr
-            zack</a></p>
-        <!-- End footer -->
-      </footer>
-
-      <!-- END PAGE CONTENT -->
     </div>
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
 
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a href="https://www.facebook.com/Le.Didk.908" target="_blank"><i
+          class="fa fa-facebook-official w3-jumbo w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/le_didk/" target="_blank"><i
+          class="fa fa-instagram w3-jumbo w3-hover-opacity"></i></a>
+      <a href="https://www.youtube.com/channel/UCQUeIZ3OtPaJI8_i9WJBKHw" target="_blank"><i
+          class="fa fa-youtube w3-jumbo w3-hover-opacity"></i></a>
+      <i class="fa fa-twitter w3-jumbo w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-jumbo w3-hover-opacity"></i>
+      <p class="w3-medium">Designed by <a href="http://mr-zack.com/" target="_blank" class="w3-hover-text-green">Mr
+          zack</a></p>
+      <!-- End footer -->
+    </footer>
 
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
+    <!-- END PAGE CONTENT -->
+  </div>
 
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1
-        }
-        if (n < 1) {
-          slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
 </body>
 
 </!-->
