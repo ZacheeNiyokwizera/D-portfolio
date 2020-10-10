@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/samplekit.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -21,17 +22,22 @@
     }
     
     body {
-        background-image: url(images/links-bg.jpg);
+        background-color: #000;
         box-sizing: border-box;
     }
     
     #links-page {
+        margin-top: 30px;
         display: flex;
         width: 100%;
         height: 100%;
-        background-color: teal;
         align-items: center;
         justify-content: center;
+        background-image: url("images/home-bg2.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right 55% bottom 75%;
     }
     
     .music {
@@ -41,7 +47,7 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        box-shadow: 4px 4px 8px 8px yellowgreen;
+        box-shadow: 10px 5px 5px red;
     }
     
     .music-description {
@@ -93,7 +99,7 @@
     }
     
     .social {
-        color: yellow;
+        color: #fff;
         height: 15px;
         padding: 20px;
         margin-bottom: 20px;
@@ -290,7 +296,36 @@
 </style>
 
 <body>
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-grey w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="images/home.jpg" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="images.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-photo w3-xxlarge"></i>
+            <p>PHOTOS</p>
+        </a>
 
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="about.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT
+                ME</a>
+            <a href="images.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+            <a href="links.html" class="w3-bar-item w3-button" style="width:25% !important">MUSIC</a>
+            <!-- <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a> -->
+        </div>
+    </div>
     <!-- Contact Section -->
     <section id="links-page">
 
@@ -360,14 +395,18 @@
             <div class="social">
 
                 -------------------------------
+                <p>Follow me on Instagram</p>
             </div>
-            <!-- <div class="copy-text">
-                <p>By using this service you agree to </p>
-                <p>our Privacy Policy and Terms Of Use.</p> <br>
-                <p> Manage your permissions</p>
+            <div class="copy-text">
+                <!-- Footer -->
+                <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
 
-                <p>Report a Problem</p>
-            </div> -->
+                    <a href="https://www.instagram.com/le_didk/ " target="_blank "><i
+                    class="fa fa-instagram w3-jumbo w3-pink w3-spin"></i></a>
+                    <!-- End footer -->
+                </footer>
+
+            </div>
 
         </div>
     </section>
