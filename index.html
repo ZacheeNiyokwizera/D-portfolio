@@ -1,90 +1,378 @@
 <!DOCTYPE html>
-
-<title>Le didk</title>
-<link rel="shortcut icon" href="images/pic1.jpg" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="javascript" href="index.js">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<html>
+<title>About me</title>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="images/home.jpg" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/samplekit.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Montserrat", sans-serif
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    body {
+        background-image: url(images/links-bg.jpg);
+        box-sizing: border-box;
+    }
+    
+    #links-page {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: teal;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .music {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        box-shadow: 4px 4px 8px 8px yellowgreen;
+    }
+    
+    .music-description {
+        padding: 30px;
+        text-align: center;
+        color: #fff;
+        width: 50%;
+        height: 100%;
+        background-color: #555;
+        margin-top: -10px;
+    }
+    
+    .music-description p {
+        color: #000;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    
+    .header-img {
+        width: 50%;
+    }
+    
+    .bottom-btn {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: #555;
+    }
+    
+    .item-group {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px yellow;
+    }
+    
+    .social {
+        color: yellow;
+        height: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .copy-text {
+        color: #000;
+        font-size: medium;
+        font-weight: 300;
+    }
+    
+    .play-btn {
+        margin-left: 40px;
+        outline: none;
+        width: 60px;
+        height: 30px;
+        color: #000;
+        background-color: grey;
+        border-color: #fff;
+    }
+    
+    #spot-btn {
+        padding: 10px;
+        border: black;
+        color: #1DB954;
+        padding: 20px 16px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 34px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    
+    .fa-spotify {
+        width: 30px;
+    }
+    
+    #youtube-btn {
+        color: black;
+        border: black;
+        padding: 20px 16px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: -28px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    
+    .fa-youtube {
+        color: red;
+    }
+    
+    #amazon-btn {
+        border: black;
+        padding: 20px 16px;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        margin-right: -28px;
+        background-color: #fff;
+    }
+    
+    .fa-amazon {
+        color: blue;
+    }
+    
+    #google-play-btn {
+        border: black;
+        color: green;
+        padding: 20px 16px;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    
+    .fa-google-play {
+        color: green;
+    }
+    
+    #apple-music-btn {
+        border: black;
+        color: #000;
+        padding: 20px 16px;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    
+    .fa-apple {
+        color: #000;
+    }
+    
+    #i-tune-btn {
+        border: black;
+        color: #000;
+        padding: 20px 16px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 58px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    
+    .fa-itunes {
+        border: 1px solid grey;
+        color: #000;
+    }
+    
+    #deezer-btn {
+        border: black;
+        color: #000;
+        padding: 20px 16px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 40px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    
+    .fa-deezer {
+        color: #000;
+    }
+    
+    #website-btn {
+        border: black;
+        color: #000;
+        padding: 20px 16px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: -15px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    
+    .website {
+        color: #000;
+    }
+    
+    @media only screen and (max-width: 400px) {
+        #spot-btn {
+            padding: -20px;
+            border: black;
+            color: #1DB954;
+            padding: 20px 16px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: 17px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+        #i-tune-btn {
+            border: black;
+            color: #000;
+            padding: 20px 16px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: 45px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+        .fa-itunes {
+            border: 1px solid grey;
+            color: #000;
+        }
+        #deezer-btn {
+            border: black;
+            color: #000;
+            padding: 20px 16px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: 20px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+        .fa-deezer {
+            color: #000;
+        }
+        #website-btn {
+            border: black;
+            color: #000;
+            padding: 20px 16px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: -15px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+        .website {
+            color: #000;
+        }
     }
 </style>
 
-<body class="w3-white">
+<body>
 
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-grey w3-bar-block w3-small w3-hide-small w3-center">
-        <!-- Avatar image in top left corner -->
-        <img src="images/home.jpg" style="width:100%">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-            <i class="fa fa-home w3-xxlarge"></i>
-            <p>HOME</p>
-        </a>
-        <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-user w3-xxlarge"></i>
-            <p>ABOUT</p>
-        </a>
-        <a href="images.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-photo w3-xxlarge"></i>
-            <p>PHOTOS</p>
-        </a>
-        <a href="links.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-music w3-xxlarge"></i>
-            <p>MUSIC</p>
-        </a>
+    <!-- Contact Section -->
+    <section id="links-page">
 
-    </nav>
+        <div class="music container">
 
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-            <a href="about.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT
-                ME</a>
-            <a href="images.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-            <a href="links.html" class="w3-bar-item w3-button" style="width:25% !important">MUSIC</a>
-            <!-- <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a> -->
+            <div class="header-img">
+                <img src="images/links-bg.jpg" style="width:100%">
+
+            </div>
+            <div class="music-description">
+
+                <h3>Umuvyeyi by ledidk</h3>
+                <p>Choose your streaming Service</p>
+            </div>
+
+            <div class="bottom-btn">
+
+                <div class="item-group">
+                    <button id="spot-btn"><i class="fa fa-spotify"></i> Spotify</button> <button class="play-btn"><a href="https://open.spotify.com/artist/1NZuxk5PvGY0s53JEDwXQC?si=v2OfpLioRGixwBZrPdYxLA">play</a></button>
+                </div>
+                <br>
+
+                <div class="item-group">
+                    <button id="youtube-btn"><i class="fa fa-youtube"></i> Youtube Music</button> <button class="play-btn"><a href="https://www.youtube.com/watch?v=TEkl7A5em5M">play</a></button>
+                </div>
+
+                <br>
+
+                <div class="item-group">
+                    <button id="amazon-btn"><i class="fa fa-amazon"></i> Amazon music</button> <button class="play-btn"><a href="https://www.amazon.com/dp/B08JTJWKDL/ref=cm_sw_r_cp_awdb_t1_hVCGFb2DAPFWV">play</a></button>
+                </div>
+
+                <br>
+
+                <div class="item-group ">
+                    <button id="google-play-btn"><i class="fab fa-google-play"></i>Google play</button> <button class="play-btn "><a href="https://play.google.com/store/music/album/Ledidk_Umuvyeyi?id=B72mbymyvclaaoqo6i6im6obyia">play</a>
+                    </button>
+                </div>
+                <br>
+
+                <div class="item-group">
+                    <button id="apple-music-btn"><i class="fab fa-apple"></i> Apple Music </button>
+                    <button class="play-btn"><a href="https://music.apple.com/us/album/umuvyeyi-instrumental-single/1533026180?uo=4">play</a>
+                    </button>
+                </div>
+                <br>
+
+                <div class="item-group">
+                    <button id="i-tune-btn"><i class="fab fa-itunes"></i> I tune </button> <button class="play-btn"><a href="https://music.apple.com/us/album/umuvyeyi-instrumental-single/1533026180?uo=4&app=itunes&at=1001lry3&ct=dashboard">Buy</a></button>
+                </div>
+
+                <br>
+
+                <div class="item-group">
+                    <button id="deezer-btn"><i class='fab fa-deezer fa-lg'></i> Deezer</button>
+                    <button class="play-btn"><a href="https://open.spotify.com/artist/1NZuxk5PvGY0s53JEDwXQC?si=v2OfpLioRGixwBZrPdYxLA">play</a></button>
+                </div>
+                <br>
+
+                <div class="item-group">
+                    <button id="website-btn"><i class="website"></i> Le Didk website</button> <button class="play-btn"><a href="http://distracted-mclean-88fd41.netlify.com/">Go to</a>
+                        </button>
+                </div>
+
+            </div>
+
+            <div class="social">
+
+                -------------------------------
+            </div>
+            <!-- <div class="copy-text">
+                <p>By using this service you agree to </p>
+                <p>our Privacy Policy and Terms Of Use.</p> <br>
+                <p> Manage your permissions</p>
+
+                <p>Report a Problem</p>
+            </div> -->
+
         </div>
-    </div>
+    </section>
 
-    <!-- Page Content -->
-    <div class="w3-padding-large" id="main">
-        <!-- Header/Home -->
-        <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
-            <h1 class="w3-jumbo"><span class="w3-hide-small">I'M </span>LE DIDK</h1>
 
-            <img src="images/bg.jpg" alt=" boy " class="w3-image " width="992 " height="1108 ">
-            <p class="w3-xlarge "> God, Goals, Growing & Glowing </p>
-        </header>
-
-        <!-- Footer -->
-        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-            <a href="https://www.facebook.com/Le.Didk.908 " target="_blank "><i
-                    class="fa fa-facebook-official w3-jumbo w3-hover-opacity w3-spin"></i></a>
-            <a href="https://www.instagram.com/le_didk/ " target="_blank "><i
-                    class="fa fa-instagram w3-jumbo w3-hover-opacity w3-spin"></i></a>
-            <a href="https://www.youtube.com/channel/UCQUeIZ3OtPaJI8_i9WJBKHw " target="_blank "><i
-                    class="fa fa-youtube w3-jumbo w3-hover-opacity w3-spin"></i></a>
-            <a href="https://twitter.com/le_didk" target="_blank">
-                <i class="fa fa-twitter w3-jumbo w3-hover-opacity w3-spin"></i></a>
-            <a href="https://www.linkedin.com/in/le-didk-773715176/" target="_blank">
-                <i class="fa fa-linkedin w3-jumbo w3-hover-opacity w3-spin"></i></a>
-
-            <!-- End footer -->
-        </footer>
-
-        <!-- END PAGE CONTENT -->
-    </div>
 
 </body>
 
