@@ -414,7 +414,7 @@ p {
 
 .contact-left {
     width: 35%;
-    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(img/contact-bg.jpg) center no-repeat;
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(images/pic8.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -898,11 +898,24 @@ p {
     html {
         font-size: 45%;
     }
+    #header .nav-list ul {
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+    #header .nav-list ul li {
+        display: inline-block;
+    }
     .footer {
-        height: 50%;
+        height: 60%;
+        margin-bottom: -10px;
     }
     .social-list {
         margin-top: 20px;
+        margin-bottom: 15px;
+        padding: 20px;
     }
     .contact-heading {
         font-size: 25px;
